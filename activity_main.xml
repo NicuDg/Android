@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <Button
+        android:id="@+id/add_patient"
+        android:layout_width="133dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="127dp"
+        android:layout_marginEnd="134dp"
+        android:layout_marginBottom="28dp"
+        android:text="Add patient"
+        app:layout_constraintBottom_toTopOf="@+id/view_scadule"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/view_scadule"
+        android:layout_width="136dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="127dp"
+        android:layout_marginEnd="126dp"
+        android:layout_marginBottom="48dp"
+        android:text="View schedule"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/image_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/dent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="150dp"
+        android:layout_marginEnd="155dp"
+        android:layout_marginBottom="82dp"
+        android:text="Welcome!"
+        android:textColor="#2979FF"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/add_patient"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</android.support.constraint.ConstraintLayout>
